@@ -1,0 +1,6 @@
+title: Knighton Town Silver Band
+url: https://knightontownsilverband.co.uk
+lang: en-GB
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }

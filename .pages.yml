@@ -1,0 +1,40 @@
+media:
+  input: assets/images
+  output: /assets/images
+
+content:
+  - name: about
+    label: About Us
+    type: file
+    path: index.md
+    fields:
+      - { name: title, type: string }
+      - { name: body, type: rich-text }
+
+  - name: training
+    label: Training Band
+    type: file
+    path: training-band/index.md
+    fields:
+      - { name: title, type: string }
+      - { name: body, type: rich-text }
+
+  - name: contact
+    label: Contact details
+    type: file
+    path: _data/contact.yml
+    fields:
+      - { name: email, type: string }
+      - { name: rehearsal_venue, type: string }
+      - { name: rehearsal_times, type: text }
+      - { name: address, type: text }
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: _data/gallery.yml
+    list: true
+    fields:
+      - { name: image, type: image }
+      - { name: alt, type: string, label: Description of photo }
+      - { name: caption, type: string }
